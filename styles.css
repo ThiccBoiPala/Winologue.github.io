@@ -1,0 +1,83 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #6a3950;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.title-bar h1 {
+    margin: 0;
+}
+
+.welcome {
+    font-size: 35px;
+    color: #f4f4f9;
+}
+
+.main-title {
+    font-size: 36px;
+    color: #36052d;
+    font-weight: bold;
+}
+
+.marquee p {
+    font-size: 24px;
+    animation: marquee 15s linear infinite;
+    margin-top: 10px;
+}
+
+
+
+.dropdown:hover .dropdown-content,
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+.sub-dropdown-content {
+    left: 100%; /* Positioning the sub-menu on the right side of the main menu */
+    top: 0; /* Aligning the sub-menu with its parent item */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.hero {
+    background: url('wine_hero.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: #6a3950;
+    padding: 0px 0px 0px 0px;
+    color: white;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-log {
+    right: auto;
+    float: right;
+}
